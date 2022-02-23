@@ -5,5 +5,4 @@ class Model {
 
         this.id = Date.now();
     }
-
 }
