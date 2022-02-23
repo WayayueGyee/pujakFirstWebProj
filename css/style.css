@@ -4,13 +4,14 @@
 
 .changes_block {
     display: flex;
-}
-
-.changes_block input:nth-child(1) {
-    margin-left: 0px;
+    justify-content: center;
 }
 
 .changes_block input {
+    border: 3px solid #000000;
+}
+
+.changes_block #date {
     margin-left: 20px;
 }
 
