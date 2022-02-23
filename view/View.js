@@ -4,6 +4,7 @@ class View {
         this.taskInput = document.querySelector("#title");
         this.dateInput = document.querySelector("#date");
         this.addButton = document.querySelector(".add");
+        
         this.addButton.addEventListener("click", _ => {
             const newDiv = document.createElement("div");
             const model = this.controller.changeModel(this.taskInput.value, this.dateInput.value)
