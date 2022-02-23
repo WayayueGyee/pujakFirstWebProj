@@ -6,7 +6,14 @@ class View {
         this.addButton = document.querySelector(".add");
         this.addButton.addEventListener("click", _ => {
             const newDiv = document.createElement("div");
-            newDiv.innerHTML = `<h1>${this.controller.changeModel(this.taskInput.value, this.dateInput.value).title}</h1>`;
+            const model = this.controller.changeModel(this.taskInput.value, this.dateInput.value)
+            newDiv.innerHTML = `
+            <h1>
+                ${model.title}
+            </h1>
+            <p>
+                ${model.date}
+            </p>`;
             document.body.append(newDiv)
         })
     }
