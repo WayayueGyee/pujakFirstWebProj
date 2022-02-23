@@ -3,9 +3,8 @@ class Controller {
         this.model = model
     }
 
-    changeModel(titleValue, dateValue) {
+    setModel(titleValue, dateValue) {
         this.model.title = titleValue
         this.model.date = dateValue
-        return this.model
     }
 }
