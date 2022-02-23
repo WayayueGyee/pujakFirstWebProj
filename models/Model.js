@@ -3,7 +3,7 @@ class Model {
         this.title = title;
         this.date = date;
 
-        this.id = Math.floor(Math.random() * 10000);
+        this.id = Date.now();
     }
 
 }
